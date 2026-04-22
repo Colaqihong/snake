@@ -67,6 +67,7 @@ button:active { transform: scale(0.95); }
     
     function clearCanvas(){ ctx.clearRect(0,0,canvas.width,canvas.height); totalLength=0; document.getElementById("result").innerText=""; }
     
+    // 声音文件同样需要放在同一个文件夹里
     const successAudio = new Audio('button-37a.mp3'); 
     const failAudio = new Audio('beep-03.mp3'); 
     function playSuccessSound(){ successAudio.currentTime=0; successAudio.play().catch(e=>console.log("Playback failed:", e)); }
